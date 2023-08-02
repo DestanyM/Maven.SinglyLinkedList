@@ -9,9 +9,6 @@ import java.util.LinkedList;
  */
 public class SinglyLinkedListTest {
 
-    @Test
-    public void testAdd(){
-        LinkedList<String> linkedList = new LinkedList<String>();
 
 
    }

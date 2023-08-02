@@ -1,47 +1,51 @@
 package com.zipcodewilmington.singlylinkedlist;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 
 /**
  * Created by leon on 1/10/18.
  */
-public class SinglyLinkedList {
-    LinkedList<String> linkedList = new LinkedList<>();
+public class SinglyLinkedList<T> implements LinkedListIface {
+    public SinglyLinkedList(){}
 
-    public void add(){
-        linkedList.add("John");
-        linkedList.add("Mike");
-        linkedList.add("Eric");
-        linkedList.add("Ryan");
-        linkedList.add("Josh");
-
-    }
-    public void remove(){
-        linkedList.remove(0);
-    }
-
-    public void contains(){
-        linkedList.contains("Mike");
-    }
-
-    public void find(){
-        //linkedList.find("Mike");
-    }
-
-    public void size(){
-        linkedList.size();
-    }
-
-    public void get(){
-        linkedList.get(0);
-    }
-
-    public void copy(){
-       // linkedList.copy();
+    @Override
+    public void add(Object data) {
 
     }
 
-    public void sort(){
-       // linkedList.sort();
+    @Override
+    public void remove(int index) throws IndexOutOfBoundsException {
+
+    }
+
+    @Override
+    public Object get(int index) throws IndexOutOfBoundsException {
+        return null;
+    }
+
+    @Override
+    public boolean contains(Object data) {
+        return false;
+    }
+
+    @Override
+    public int find(Object data) {
+        return 0;
+    }
+
+    @Override
+    public int size() {
+        return 0;
+    }
+
+    @Override
+    public SinglyLinkedList copy() {
+        return null;
+    }
+
+    @Override
+    public void sort(Comparator comparator) {
+
     }
 }
